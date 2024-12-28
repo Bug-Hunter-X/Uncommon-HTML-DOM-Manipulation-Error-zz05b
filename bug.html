@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    // This line of code tries to access a non-existent element
+    // before the element has been parsed by the browser.
+    let myDiv = document.getElementById("myDiv");
+    myDiv.innerHTML = "<p>This is added later</p>";
+  </script>
+</body>
+</html>
